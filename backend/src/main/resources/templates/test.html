@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- 입력 필드 -->
+<input type="text" id="userMsg" placeholder="메시지를 입력하세요">
+<!-- 전송 버튼 -->
+<button onclick="sendMessage()">Send</button>
+<button onclick="missionCheck()">MissionCheck</button>
+<!-- 메시지 목록 -->
+<ul id="messageList"></ul>
+<!-- 대화종료 버튼 -->
+<br>
+<hr>
+<button onclick="finishChat()">Finish</button>
+<button onclick="newRoom()">CreateRoom</button>
+<button onclick="checkMessages()">CheckMessages</button>
+<button onclick="getPractice()">getPractice</button>
+<button onclick="getRooms()">getRooms</button>
+<br>
+<h3>Grammar Check</h3>
+<ul id="messageHistory"></ul>
+
+<audio id="myAudio" controls crossorigin="anonymous">
+    <source src="/pooh.wav" type="audio/wav">
+</audio>
+
+<!-- Axios 라이브러리 추가 -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    var messages = [];
+    var responseTimes = [];
+    var messageCount = 0;
+    var roomid;
+<!--    window.onload = function() {-->
+<!--        axios.post('/chat/createConnection')-->
+<!--        .then(function(response) {-->
+<!--            console.log(response.data)})-->
+<!--        .catch(function (error) {-->
+<!--            console.error('에러 발생:', error);-->
+<!--    })-->
+<!--    }-->
+
+    function getRooms() {
+        axios.get('/room/getRooms', {
+            params: {
+                userid : 'poohpooh12'
+            }
+        }).then(function (response) {
+            console.log(response.data);
+        })
+    }
+    function getPractice() {
+        axios.get('/practice/getPractice', {
+            params: {
+                expression : "Are you going to ...?",
+                meaning : "(~할 거에요/가려고 하는 중이에요?)",
+                level : 0
+            }
+        }).then(function (response) {
+            console.log(response.data);
+        })
+
+    }
+
+
+    function checkMessages() {
+        axios.get('/message/wrongMessages', {
+            params: {
+                roomid : roomid
+        }
+        }).then(function (response) {
+            console.log(response.data);
+        })
+    }
+    function newRoom() {
+        axios.post('/room/newRoom', {
+            userid : 'han123',
+            ai : 'pooh',
+            messages : messages
+        }).then(function (response) {
+            console.log(response.data)
+            roomid = response.data;
+        })
+    }
+
+    function missionCheck() {
+        var userMsg = document.getElementById('userMsg').value;
+        axios.post('/chat/checkMission', {
+            userMsg : userMsg
+        })
+        .then(function (response) {
+            console.log(response.data);
+        })
+        .catch(function (error) {
+            console.error('에러 발생:', error);
+        });
+    }
+    function finishChat() {
+        var messageHistory = document.getElementById('messageHistory');
+        var checkingMsg = document.createElement('li');
+        checkingMsg.textContent = "Grammar Checking...";
+        messageHistory.appendChild(checkingMsg);
+
+        axios.post('/chat/getCorrection', {
+            messages: messages
+        })
+        .then(function(response) {
+            console.log(response.data)
+            messageHistory.removeChild(checkingMsg);
+            messages = response.data;
+            var correctCount = 0;
+            var correctedMsg = response.data;
+            correctedMsg.forEach(function(msg) {
+                if (msg.includes('->')) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = msg;
+                    messageHistory.appendChild(listItem);
+                    correctCount++;
+                }
+            });
+
+            if (correctCount === 0) {
+                var perfectGrammarMsg = document.createElement('li');
+                perfectGrammarMsg.textContent = "Perfect Grammar";
+                messageHistory.appendChild(perfectGrammarMsg);
+            }
+        })
+        .catch(function (error) {
+            console.error('에러 발생:', error);
+        });
+    }
+
+    function sendMessage() {
+        var userMsg = document.getElementById('userMsg').value;
+        var startTime = performance.now();
+        messages.push(`user: ${userMsg}`);
+        axios.post('/chat/getAnswer', {
+            messages: messages
+        })
+        .then(function (response) {
+            var aiMsg = response.data;
+            messages.push(`pooh: ${aiMsg}`);
+            var endTime = performance.now();
+            var elapsedTime = endTime - startTime;
+            responseTimes.push(elapsedTime);
+            messageCount++;
+            displayMessages(`(소요 시간: ${elapsedTime.toFixed(2)}ms)`);
+            updateAverage(elapsedTime);
+        })
+        .catch(function (error) {
+            console.error('에러 발생:', error);
+        });
+
+        document.getElementById('userMsg').value = '';
+    }
+
+    function displayMessages(extraMessage) {
+    var messageList = document.getElementById('messageList');
+    messageList.innerHTML = ''; // Clear previous messages
+
+    messages.forEach(function(msg, index) {
+        var messageItem = document.createElement('li');
+        messageItem.textContent = msg;
+        if (index < responseTimes.length) {
+            messageItem.textContent += ` (${responseTimes[index].toFixed(2)}ms)`;
+        }
+        messageList.appendChild(messageItem);
+    });
+
+    if (extraMessage) {
+        var extraMessageItem = document.createElement('li');
+        extraMessageItem.textContent = extraMessage;
+        messageList.appendChild(extraMessageItem);
+    }
+    }
+    function updateAverage(time) {
+        var currentAverage = calculateAverage(responseTimes);
+        var newAverage = ((currentAverage * (messageCount - 1)) + time) / messageCount;
+        var averageTimeDiv = document.getElementById('averageTime');
+        if (!averageTimeDiv) {
+            averageTimeDiv = document.createElement('div');
+            averageTimeDiv.id = 'averageTime';
+            document.body.appendChild(averageTimeDiv);
+        }
+        averageTimeDiv.textContent = "Average Response Time: " + newAverage.toFixed(2) + "ms";
+    }
+
+    function calculateAverage(arr) {
+        if (arr.length === 0) return 0;
+        var sum = arr.reduce((acc, val) => acc + val, 0);
+        return sum / arr.length;
+    }
+</script>
+</body>
+</html>
