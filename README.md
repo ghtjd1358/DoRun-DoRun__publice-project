@@ -186,7 +186,7 @@
              사용자는 랜덤으로 배치된 문장을 해석에 맞춰 영어 단어를 클릭하여 순서대로 맞추는 퀴즈를 풀 수 있습니다. 퀴즈를 통해 학습한 내용을 복습하고 확장할 수 있습니다.
         </td>
     </tr>
-</table>
+</table><br>
 
 <h2>프로젝트 구성도</h2>
 <table>
@@ -205,7 +205,7 @@
     <tr>
         <td><img src="" alt=""></td>
      </tr>
-</table>
+</table><br>
 
 <h3>폴더 구조(client)</h3>
 <pre>
@@ -310,7 +310,7 @@ server
 ├─ Dockerfile
 ├─ .gitignore
 └─ package.json
-</pre>
+</pre><br>
 
 <h2>개발 팀 소개</h2>
 <table>
@@ -318,7 +318,7 @@ server
         <td><img src="" alt="한우리"></td>
         <td><img src="" alt="이정원"></td>
         <td><img src="" alt="심세연"></td>
-        <td><img src="" alt="이상호"></td>
+        <td><img src="" alt="김김상호"></td>
         <td><img src="" alt="손호성"></td>
         <td><img src="" alt="한지혜"></td>
     </tr>
@@ -330,7 +330,7 @@ server
         <td>손호성(Front-end)</td>
         <td>이정원(Front-end)</td>
     </tr>
-</table>
+</table><br>
 
 <table>
     <tr>
@@ -341,9 +341,59 @@ server
     <tr>
         <td>한우리</td>
         <td>Back-end, 팀장</td>
-        <td>..</td>
+        <td>
+            -Chat-bison<br>
+            -Mission 기능<br>
+            -Practice 기능<br>
+        </td>
     </tr>
-</table>
+    <tr>
+        <td>이정원</td>
+        <td>Back-end</td>
+        <td>
+            -서버 구축<br>
+            -보안<br>
+            -TTS<br>
+            -User 관리<br>
+        </td>
+    </tr>
+     <tr>
+        <td>심세연</td>
+        <td>Back-end</td>
+        <td>
+            -STT<br>
+            -ChatModel<br>
+            -Mission 기능<br>
+        </td>
+    </tr>
+    <tr>
+        <td>김상호</td>
+        <td>Front-end</td>
+        <td>
+            -대화하기 목록<br>
+            -룸 페이지<br>
+        </td>
+    </tr>
+        <tr>
+        <td>손호성</td>
+        <td>Front-end</td>
+        <td>
+            -Redux-toolkit을 이용한 상태관리<br>
+            -로그인, 마이페이지 구현<br>
+            -마이페이지 생성, 수정, 삭제 기능 구현<br>
+            -React-hook-form을 이용한 유효성 검사<br>
+            -랜딩 페이지, error 페이지 구현<br>
+            -퀴즈 기능 구현<br>
+        </td>
+    </tr>
+        <tr>
+        <td>한지혜</td>
+        <td>Front-end</td>
+        <td>
+            -CSS 전판<br>
+        </td>
+    </tr>
+</table><br>
 
 <h2>프로젝트 소개 및 영상</h2>
 
