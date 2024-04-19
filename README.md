@@ -140,9 +140,51 @@
     </tr>
     <tr>
         <td>
-            
+            만화 및 영화 캐릭터 활용
         </td>
-        
+        <td>
+            다양한 만화와 영화 캐릭터를 활용하여 영어 학습을 더욱 재미있게 만들어 줍니다. 사용자들은 친숙한 캐릭터들과 대화를 통해 영어를 배울 수 있습니다.
+        </td>
+    </tr>
+     <tr>
+        <td>
+            AI 기반 대화
+        </td>
+        <td>
+             AI로 학습된 캐릭터와의 대화를 통해 영어를 자연스럽게 연습할 수 있습니다. 사용자는 캐릭터와 대화하며 미션을 수행하고, 학습한 문장을 활용할 수 있습니다.
+        </td>
+    </tr>
+     <tr>
+        <td>
+            단계별 난이도 조절
+        </td>
+        <td>
+             사용자는 본인의 수준에 맞게 난이도를 조절할 수 있습니다. 각 단계에서 AI가 사용자 레벨에 맞는 문장을 랜덤으로 제시합니다.
+        </td>
+    </tr>
+     <tr>
+        <td>
+            미션 기반 학습
+        </td>
+        <td>
+             미션을 완료하면 다음 단계로 진행할 수 있습니다. 미션을 수행할 때마다 도전과제가 점점 더 어려워지며 다양한 문장들이 생성됩니다. 이로써 체계적인 영어 학습이 가능합니다.
+        </td>
+    </tr>
+     <tr>
+        <td>
+            대화 내용 기록
+        </td>
+        <td>
+             캐릭터와의 대화 내용을 기록하여 사용자가 어디까지 진행했는지, 어떤 대화를 나누었는지 쉽게 확인할 수 있습니다.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            퀴즈 기능
+        </td>
+        <td>
+             사용자는 랜덤으로 배치된 문장을 해석에 맞춰 영어 단어를 클릭하여 순서대로 맞추는 퀴즈를 풀 수 있습니다. 퀴즈를 통해 학습한 내용을 복습하고 확장할 수 있습니다.
+        </td>
     </tr>
 </table>
 
@@ -152,7 +194,7 @@
         <th>아키텍처(Architecture)</th>
     </tr>
     <tr>
-        <img src="" alt="">
+        <td><img src="" alt=""></td>
      </tr>
 </table>
 
@@ -161,13 +203,114 @@
         <th>개체 관계 모델(ERD)(Architecture)</th>
     </tr>
     <tr>
-        <img src="" alt="">
+        <td><img src="" alt=""></td>
      </tr>
 </table>
 
 <h3>폴더 구조(client)</h3>
+<pre>
+    client
+├─ node_modules
+├─ public
+├─ src
+│   ├─ app
+│   ├─ features
+│   │     ├─ CategorySearchFeat
+│   │     │         └─ model
+│   │     ├─ CategoryViewFeat
+│   │     │         ├─ api
+│   │     │         └─ model
+│   │     ├─ InterGratedSearchIconFeat
+│   │     │         └─ api
+│   │     ├─────── ListView
+│   │     │         ├─ api
+│   │     │         ├─ lib
+│   │     │         ├─ model
+│   │     │         └─ ui
+│   │     │             ├─ Comment
+│   │     │             ├─ ListViewDetail
+│   │     │             └─ ListViewMain
+│   │     ├─────── Login
+│   │     ├─────── MainPageFeat
+│   │     │           └─ ui
+│   │     ├─────── MyPage
+│   │     ├─────── NewPost
+│   │     │           ├─ api
+│   │     │           ├─ lib
+│   │     │           ├─ model
+│   │     │           └─ ui
+│   │     ├─────── NodeSearchFeat
+│   │     │           └─ model
+│   │     ├─────── NodeViewFeat
+│   │     │           ├─ api
+│   │     │           └─ model
+│   │     ├─────── Register
+│   │     └─────── Title
+│   ├── pages
+│   │     ├─ CategoryView
+│   │     ├─ ListView
+│   │     ├─ Login
+│   │     ├─ Main
+│   │     ├─ Mypage
+│   │     ├─ NewPost
+│   │     ├─ NodeView
+│   │     └─ Register
+│   ├── shared
+│   │     ├─ api
+│   │     ├─ Modal
+│   │     └─ Model
+│   ├── types
+│   └── widgets
+│         ├─ CategoryView
+│         ├─ Chat
+│         ├─ Header
+│         ├─ ListView
+│         ├─ MainPageD3
+│         ├─ MyPageWid
+│         └─ nodeView
+│               └─ model
+├─ .gitignore
+└─ package.json
+
+</pre>
 
 <h3>폴더 구조(server)</h3>
+<pre>
+    ai_server
+│   ├─ chat
+│   ├─ chatAI
+│   ├─ Lambda_function
+│   ├─ post
+│   ├─ recommend_post
+│   └─ recommend_update
+│		
+│
+server
+├─ gradle/wrapper
+├─ src
+│   ├─ main
+│   │   ├─ generated
+│   │   ├─ java/starwrite/server
+│   │   │          ├─ auth
+│   │   │          ├─ config
+│   │   │          ├─ controller
+│   │   │          ├─ dto
+│   │   │          ├─ entity
+│   │   │          ├─ enums
+│   │   │          ├─ relationship
+│   │   │          ├─ respository
+│   │   │          ├─ request
+│   │   │          ├─ response
+│   │   │          ├─ service
+│   │   │          └─ utils
+│   │   └─ resources
+│   └─ test/java/starwrite/server
+│
+├─ build.gradle
+├─ Dockerfile
+├─ .gitignore
+└─ package.json
+</pre>
 
 <h2>개발 팀 소개</h2>
 <table>
@@ -189,7 +332,21 @@
     </tr>
 </table>
 
+<table>
+    <tr>
+        <th>이름</th>
+        <th>역할</th>
+        <th>개발 내용</th>
+    </tr>
+    <tr>
+        <td>한우리</td>
+        <td>Back-end, 팀장</td>
+        <td>..</td>
+    </tr>
+</table>
+
 <h2>프로젝트 소개 및 영상</h2>
+
 
 <h2>실행 방법</h2>
 <h3>Client 실행</h3>
@@ -204,6 +361,7 @@
 <pre>$ $ npm run dev</pre>
 
 <h3>Main Server 실행</h3>
+
 
 
 
