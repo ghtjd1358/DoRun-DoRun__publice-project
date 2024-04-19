@@ -304,7 +304,7 @@ server
 </pre><br>
 
 <h2>개발 팀 소개</h2>
-<table>
+<!-- <table>
     <tr>
         <td><img src="" alt="한우리"></td>
         <td><img src="" alt="이정원"></td>
@@ -321,7 +321,7 @@ server
         <td>손호성(Front-end)</td>
         <td>이정원(Front-end)</td>
     </tr>
-</table><br>
+</table><br> -->
 
 <table>
     <tr>
