@@ -39,7 +39,7 @@
         </tr>
        <tr>
             <td>8</td>
-            <td><a href="#실행방법">실행방법</a></td>
+            <td><a href="#실행-방법">실행방법</a></td>
         </tr>
     </tbody>
 </table><br>
@@ -390,6 +390,7 @@ server
 
 
 <h2>실행 방법</h2>
+
 <h3>Client 실행</h3>
 <h4>1. 원격 저장소 복제</h4>
 <pre>$ git clone https://github.com/KwonKuwhi/starwrite.git</pre>
