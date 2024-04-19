@@ -19,30 +19,26 @@
         </tr>
        <tr>
             <td>3</td>
-            <td><a href = ''>주제 선정 이유</a></td>
-        </tr>
-       <tr>
-            <td>4</td>
             <td><a href = ''>기술 스택</a></td>
         </tr>
        <tr>
-            <td>5</td>
+            <td>4</td>
             <td><a href = ''>주요 기능</a></td>
         </tr>
        <tr>
-            <td>6</td>
+            <td>5</td>
             <td><a href = ''>프로젝트 구성도</a></td>
         </tr>
        <tr>
-            <td>7</td>
+            <td>6</td>
             <td><a href = ''>개발 팀 소개</a></td>
         </tr>
            <tr>
-            <td>8</td>
+            <td>7</td>
             <td><a href = ''>프로젝트 소개 및 영상</a></td>
         </tr>
        <tr>
-            <td>9</td>
+            <td>8</td>
             <td><a href = ''>실행방법</a></td>
         </tr>
     </tbody>
@@ -64,7 +60,7 @@
   </tr>
   <tr>
     <td>github 주소</td>
-    <td></td>
+    <td><a href="https://github.com/ghtjd1358/DoRun-DoRun">https://github.com/ghtjd1358/DoRun-DoRun</a></td>
   </tr>
   <tr>
     <td>배포 주소</td>
@@ -84,10 +80,6 @@
 
 추가적으로, DoRun-DoRun은 퀴즈 기능을 제공합니다. 사용자는 랜덤으로 배치된 문장을 해석에 맞춰 영어 단어를 클릭하여 순서대로 맞추는 퀴즈를 풀 수 있습니다. 
 </p><br>
-
-<h2>주제 선정 이유</h2>
-<h3></h3>
-<p></p><br>
 
 <h2>기술 스택</h2>
 
@@ -140,11 +132,78 @@
     <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
 </div><br>
 
+<h2>주요 기능</h2>
+<table>
+    <tr>
+        <th>기능</th>
+        <th>내용</th>
+    </tr>
+    <tr>
+        <td>
+            
+        </td>
+        
+    </tr>
+</table>
+
+<h2>프로젝트 구성도</h2>
+<table>
+    <tr>
+        <th>아키텍처(Architecture)</th>
+    </tr>
+    <tr>
+        <img src="" alt="">
+     </tr>
+</table>
+
+<table>
+    <tr>
+        <th>개체 관계 모델(ERD)(Architecture)</th>
+    </tr>
+    <tr>
+        <img src="" alt="">
+     </tr>
+</table>
+
+<h3>폴더 구조(client)</h3>
+
+<h3>폴더 구조(server)</h3>
+
 <h2>개발 팀 소개</h2>
+<table>
+    <tr>
+        <td><img src="" alt="한우리"></td>
+        <td><img src="" alt="이정원"></td>
+        <td><img src="" alt="심세연"></td>
+        <td><img src="" alt="이상호"></td>
+        <td><img src="" alt="손호성"></td>
+        <td><img src="" alt="한지혜"></td>
+    </tr>
+    <tr>
+        <td>한우리(Back-end, 팀장)</td>
+        <td>이정원(Back-end)</td>
+        <td>심세연(Back-end)</td>
+        <td>이상호(Front-end)</td>
+        <td>손호성(Front-end)</td>
+        <td>이정원(Front-end)</td>
+    </tr>
+</table>
 
 <h2>프로젝트 소개 및 영상</h2>
 
 <h2>실행 방법</h2>
+<h3>Client 실행</h3>
+<pre>$ git clone https://github.com/KwonKuwhi/starwrite.git</pre> ----> 내 주소로 수정
+
+<h4>2. 프로젝트 폴더로 이동</h4>
+<pre>$ $ cd frontend</pre>
+
+<h4>3. 필요한 node_modules 설치</h4>
+<pre>$ $ npm install</pre>
+<h4>4. 개발 서버 실행</h4>
+<pre>$ $ npm run dev</pre>
+
+<h3>Main Server 실행</h3>
 
 
 
