@@ -1,4 +1,4 @@
-<h1>DoRun-DoRuun</h1>
+# DoRun-DoRuun
 <br>
 <h2>목차</h2>
 <table>
@@ -11,40 +11,40 @@
     <tbody>
         <tr>
             <td>1</td>
-            <td><a href ="#1">프로젝트 소개</a></td>
+            <td><a href="#프로젝트-소개">프로젝트 소개</a></td>
         </tr>
        <tr>
             <td>2</td>
-            <td><a href = ''>웹 서비스 소개</a></td>
+            <td><a href="#웹-서비스-소개">웹 서비스 소개</a></td>
         </tr>
        <tr>
             <td>3</td>
-            <td><a href = ''>기술 스택</a></td>
+            <td><a href="#기술-스택">기술 스택</a></td>
         </tr>
        <tr>
             <td>4</td>
-            <td><a href = ''>주요 기능</a></td>
+            <td><a href="#주요-기능">주요 기능</a></td>
         </tr>
        <tr>
             <td>5</td>
-            <td><a href = ''>프로젝트 구성도</a></td>
+            <td><a href="#프로젝트-구성도">프로젝트 구성도</a></td>
         </tr>
        <tr>
             <td>6</td>
-            <td><a href = ''>개발 팀 소개</a></td>
+            <td><a href="#개발-팀-소개">개발 팀 소개</a></td>
         </tr>
            <tr>
             <td>7</td>
-            <td><a href = ''>프로젝트 소개 및 영상</a></td>
+            <td><a href="#프로젝트-소개-및-영상">프로젝트 소개 및 영상</a></td>
         </tr>
        <tr>
             <td>8</td>
-            <td><a href = ''>실행방법</a></td>
+            <td><a href="#실행방법">실행방법</a></td>
         </tr>
     </tbody>
 </table><br>
 
-<h2><a href="#프로젝트 소개">프로젝트 소개</a></h2><1>
+## 프로젝트 소개
 <table>
   <tr>
     <th>프로젝트 명</th>
@@ -194,22 +194,13 @@
         <th>아키텍처(Architecture)</th>
     </tr>
     <tr>
-        <td><img src="" alt=""></td>
-     </tr>
-</table>
-
-<table>
-    <tr>
-        <th>개체 관계 모델(ERD)(Architecture)</th>
+        <td><img src="https://github.com/ghtjd1358/DoRun-DoRun/assets/129839683/df2d6017-4b70-4e0f-b2cb-2ac134221fc1" alt="아키텍처"></td>
     </tr>
-    <tr>
-        <td><img src="" alt=""></td>
-     </tr>
 </table><br>
 
 <h3>폴더 구조(client)</h3>
 <pre>
-    client
+client
 ├─ node_modules
 ├─ public
 ├─ src
@@ -276,7 +267,7 @@
 
 <h3>폴더 구조(server)</h3>
 <pre>
-    ai_server
+ai_server
 │   ├─ chat
 │   ├─ chatAI
 │   ├─ Lambda_function
@@ -400,15 +391,14 @@ server
 
 <h2>실행 방법</h2>
 <h3>Client 실행</h3>
-<pre>$ git clone https://github.com/KwonKuwhi/starwrite.git</pre> ----> 내 주소로 수정
-
+<h4>1. 원격 저장소 복제</h4>
+<pre>$ git clone https://github.com/KwonKuwhi/starwrite.git</pre>
 <h4>2. 프로젝트 폴더로 이동</h4>
-<pre>$ $ cd frontend</pre>
-
+<pre>$ cd frontend</pre>
 <h4>3. 필요한 node_modules 설치</h4>
-<pre>$ $ npm install</pre>
+<pre>$ npm install</pre>
 <h4>4. 개발 서버 실행</h4>
-<pre>$ $ npm run dev</pre>
+<pre>$ npm run dev</pre>
 
 <h3>Main Server 실행</h3>
 
