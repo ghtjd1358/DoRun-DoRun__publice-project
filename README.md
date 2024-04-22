@@ -410,17 +410,24 @@ server
 
 <h2>실행 방법</h2>
 
-<h3>Client 실행</h3>
-<h4>1. 원격 저장소 복제</h4>
-<pre>$ git clone https://github.com/ghtjd1358/DoRun-DoRun.git</pre>
-<h4>2. 프로젝트 폴더로 이동</h4>
-<pre>$ cd frontend</pre>
-<h4>3. 필요한 node_modules 설치</h4>
-<pre>$ npm install</pre>
-<h4>4. 개발 서버 실행</h4>
-<pre>$ npm run dev</pre>
-
-<h3>Main Server 실행</h3>
+### Client
+**1. 원격 저장소 복제**
+```bash
+$ git clone https://github.com/ghtjd1358/DoRun-DoRun.git
+```
+**2. 프로젝트 폴더로 이동**
+```bash
+$ cd frontend
+```
+**3. 필요한 node_modules 설치**
+```bash
+$ npm install
+```
+**4. 개발 서버 실행**
+```bash
+$ npm run dev
+```
+### Main Server 실행
 
 
 
