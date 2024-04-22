@@ -1,7 +1,9 @@
-# DoRun-DoRun![pc-banner](https://github.com/ghtjd1358/DoRun-DoRun/assets/129839683/4a94a2ee-1d3f-4702-b079-552bee1c7c99)
-
-<br>
-<h2>목차</h2>
+<div align="center">
+    <img src="https://github.com/ghtjd1358/DoRun-DoRun/assets/129839683/4a94a2ee-1d3f-4702-b079-552bee1c7c99" />
+    <h1>DoRun-DoRun!</h1>
+    <br/>
+</div>
+<h2>📊목차</h2>
 <table>
     <thead>
         <tr>
@@ -12,35 +14,35 @@
     <tbody>
         <tr>
             <td>1</td>
-            <td><a href="#프로젝트-소개">프로젝트 소개</a></td>
+            <td><a href="#프로젝트-소개"> 💁프로젝트 소개</a></td>
         </tr>
        <tr>
             <td>2</td>
-            <td><a href="#웹-서비스-소개">웹 서비스 소개</a></td>
+            <td><a href="#웹-서비스-소개">👷웹 서비스 소개</a></td>
         </tr>
        <tr>
             <td>3</td>
-            <td><a href="#기술-스택">기술 스택</a></td>
+            <td><a href="#기술-스택">🔍기술 스택</a></td>
         </tr>
        <tr>
             <td>4</td>
-            <td><a href="#주요-기능">주요 기능</a></td>
+            <td><a href="#주요-기능">💡주요 기능</a></td>
         </tr>
        <tr>
             <td>5</td>
-            <td><a href="#프로젝트-구성도">프로젝트 구성도</a></td>
+            <td><a href="#프로젝트-구성도">📂프로젝트 구성도</a></td>
         </tr>
        <tr>
             <td>6</td>
-            <td><a href="#개발-팀-소개">개발 팀 소개</a></td>
+            <td><a href="#개발-팀-소개">👪개발 팀 소개</a></td>
         </tr>
            <tr>
             <td>7</td>
-            <td><a href="#프로젝트-소개-및-영상">프로젝트 소개 및 영상</a></td>
+            <td><a href="#프로젝트-소개-및-영상">📱프로젝트 소개 및 영상</a></td>
         </tr>
        <tr>
             <td>8</td>
-            <td><a href="#실행-방법">실행방법</a></td>
+            <td><a href="#실행-방법">💻실행방법</a></td>
         </tr>
     </tbody>
 </table><br>
@@ -82,7 +84,7 @@
 추가적으로, DoRun-DoRun은 퀴즈 기능을 제공합니다. 사용자는 랜덤으로 배치된 문장을 해석에 맞춰 영어 단어를 클릭하여 순서대로 맞추는 퀴즈를 풀 수 있습니다. 
 </p><br>
 
-<h2>📊 기술 스택</h2>
+<h2🔍 기술 스택</h2>
 
 <h3>#Front-end</h3>
 <div>
@@ -406,7 +408,7 @@ server
     </tr>
 </table><br>
 
-<h2>프로젝트 소개 및 영상</h2>
+<h2>📱프로젝트 소개 및 영상</h2>
 
 
 <h2>💻 실행 방법</h2>
