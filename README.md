@@ -403,7 +403,7 @@ server
         <td>한지혜</td>
         <td>Front-end</td>
         <td>
-            -CSS 전판<br>
+            -CSS 전반<br>
         </td>
     </tr>
 </table><br>
