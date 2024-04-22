@@ -203,63 +203,53 @@
 client
 ├─ node_modules
 ├─ public
+|   ├─ chracters
+|   └── mission
 ├─ src
-│   ├─ app
-│   ├─ features
-│   │     ├─ CategorySearchFeat
-│   │     │         └─ model
-│   │     ├─ CategoryViewFeat
-│   │     │         ├─ api
-│   │     │         └─ model
-│   │     ├─ InterGratedSearchIconFeat
-│   │     │         └─ api
-│   │     ├─────── ListView
-│   │     │         ├─ api
-│   │     │         ├─ lib
-│   │     │         ├─ model
-│   │     │         └─ ui
-│   │     │             ├─ Comment
-│   │     │             ├─ ListViewDetail
-│   │     │             └─ ListViewMain
-│   │     ├─────── Login
-│   │     ├─────── MainPageFeat
-│   │     │           └─ ui
-│   │     ├─────── MyPage
-│   │     ├─────── NewPost
-│   │     │           ├─ api
-│   │     │           ├─ lib
-│   │     │           ├─ model
-│   │     │           └─ ui
-│   │     ├─────── NodeSearchFeat
-│   │     │           └─ model
-│   │     ├─────── NodeViewFeat
-│   │     │           ├─ api
-│   │     │           └─ model
-│   │     ├─────── Register
-│   │     └─────── Title
-│   ├── pages
-│   │     ├─ CategoryView
-│   │     ├─ ListView
+│   ├─ api
+│   ├─ assets
+│   │     └── CSS
+│   ├─ components
+│   │     ├─ Cheerio
+│   │     ├─ Footer
+│   │     ├─ Guide
+│   │     ├─ Header
+│   │     ├─ HeaderNav
 │   │     ├─ Login
-│   │     ├─ Main
 │   │     ├─ Mypage
-│   │     ├─ NewPost
-│   │     ├─ NodeView
-│   │     └─ Register
-│   ├── shared
-│   │     ├─ api
-│   │     ├─ Modal
-│   │     └─ Model
-│   ├── types
-│   └── widgets
-│         ├─ CategoryView
-│         ├─ Chat
-│         ├─ Header
-│         ├─ ListView
-│         ├─ MainPageD3
-│         ├─ MyPageWid
-│         └─ nodeView
-│               └─ model
+│   │     ├─ MypagePW
+│   │     ├─ NotFound
+│   │     ├─ Preview
+│   │     ├─ PreviewContent
+│   │     ├─ ReviewContent
+│   │     ├─ SidebarNav
+│   │     ├─ Spinner
+│   │     ├─ TabButton
+│   │     ├─ TabContent
+│   │     ├─ TeamsOfService
+│   │     ├─ UserData
+│   │     └─ Wordquiz
+│   ├─ pages
+│   │    ├─ talk
+│   │     │   ├─ ChatList
+│   │     │   └── Popup
+│   │     ├─ About
+│   │     ├─ Chat
+│   │     ├─ Hone
+│   │     ├─ Learn
+│   │     ├─ Myroom
+│   │     ├─ Review
+│   │     └─ Talk
+│   ├── store
+│   │     └─ features
+│   │            ├─ loginSlice
+│   │            ├─ signupSlice
+│   │            ├─ userIdChecklice
+│   └── utils
+│         ├─ firework
+│         └─ word
+├─ Layout
+├─ hooks
 ├─ .gitignore
 └─ package.json
 
@@ -267,38 +257,33 @@ client
 
 <h3>폴더 구조(server)</h3>
 <pre>
-ai_server
-│   ├─ chat
-│   ├─ chatAI
-│   ├─ Lambda_function
-│   ├─ post
-│   ├─ recommend_post
-│   └─ recommend_update
-│		
-│
 server
 ├─ gradle/wrapper
 ├─ src
 │   ├─ main
-│   │   ├─ generated
-│   │   ├─ java/starwrite/server
-│   │   │          ├─ auth
-│   │   │          ├─ config
-│   │   │          ├─ controller
-│   │   │          ├─ dto
-│   │   │          ├─ entity
-│   │   │          ├─ enums
-│   │   │          ├─ relationship
-│   │   │          ├─ respository
-│   │   │          ├─ request
-│   │   │          ├─ response
-│   │   │          ├─ service
-│   │   │          └─ utils
+│   │   ├─ java \ com \ example \ projectFinal
+│   │   ├─ config
+│   │   │     ├─ AwsConfig
+│   │   │     ├─ CorsConfig
+│   │   │     ├─ SecurityConfig
+│   │   │     └─ WebConfig
+│   │   ├─ controller
+│   │   │       ├─ ChatController
+│   │   │       ├─ MessageController
+│   │   │       ├─ PracticeController
+│   │   │       ├─ RoomController
+│   │   │       ├─ SpeechToTextController
+│   │   │       ├─ UserController
+│   │   │       └─ UserMissionController
+│   │   ├─ dto
+            ├─ChatDto
+    
+    │   ├─ ChatController
 │   │   └─ resources
 │   └─ test/java/starwrite/server
 │
 ├─ build.gradle
-├─ Dockerfile
+├─ gradlew
 ├─ .gitignore
 └─ package.json
 </pre><br>
