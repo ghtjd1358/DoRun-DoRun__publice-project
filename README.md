@@ -262,26 +262,60 @@ server
 ├─ src
 │   ├─ main
 │   │   ├─ java \ com \ example \ projectFinal
-│   │   ├─ config
-│   │   │     ├─ AwsConfig
-│   │   │     ├─ CorsConfig
-│   │   │     ├─ SecurityConfig
-│   │   │     └─ WebConfig
-│   │   ├─ controller
-│   │   │       ├─ ChatController
-│   │   │       ├─ MessageController
-│   │   │       ├─ PracticeController
-│   │   │       ├─ RoomController
-│   │   │       ├─ SpeechToTextController
-│   │   │       ├─ UserController
-│   │   │       └─ UserMissionController
-│   │   ├─ dto
-            ├─ChatDto
-    
-    │   ├─ ChatController
-│   │   └─ resources
-│   └─ test/java/starwrite/server
-│
+│   │   │                        ├─ config
+│   │   │                        │     ├─ AwsConfig
+│   │   │                        │     ├─ CorsConfig
+│   │   │                        │     ├─ SecurityConfig
+│   │   │                        │     └─ WebConfig
+│   │   │                        ├─ controller
+│   │   │                        │       ├─ ChatController
+│   │   │                        │       ├─ MessageController
+│   │   │                        │       ├─ PracticeController
+│   │   │                        │       ├─ RoomController
+│   │   │                        │       ├─ SpeechToTextController
+│   │   │                        │       ├─ UserController
+│   │   │                        │       └─ UserMissionController
+│   │   │                        ├─ dto
+│   │   │                        │    ├─ ChatDto
+│   │   │                        │    ├─ MessageDto
+│   │   │                        │    ├─ RoomDto
+│   │   │                        │    ├─ UserDto
+│   │   │                        │    └─ UserMissionDto
+│   │   │                        ├─ entity
+│   │   │                        │      ├─ Message
+│   │   │                        │      ├─ MissionEntity
+│   │   │                        │      ├─ Room
+│   │   │                        │      ├─ User
+│   │   │                        │      └─ UserMissionEntity
+│   │   │                        ├─ jwt
+│   │   │                        │    ├─ JwtAuthenticationFilter
+│   │   │                        │    └─ TokenProvider
+│   │   │                        ├─ repository
+│   │   │                        │      ├─ MessageRepository
+│   │   │                        │      ├─ MissionRepository
+│   │   │                        │      ├─ RoomRepository
+│   │   │                        │      ├─ UserMissionRepository
+│   │   │                        │      └─ UserRepository
+│   │   │                        ├─ service
+│   │   │                        │      ├─ ChatService
+│   │   │                        │      ├─ CorrectAi
+│   │   │                        │      ├─ MessageService
+│   │   │                        │      ├─ Pooh
+│   │   │                        │      ├─ PracticeAi
+│   │   │                        │      ├─ PracticeService
+│   │   │                        │      ├─ RoomService
+│   │   │                        │      ├─ S3Service
+│   │   │                        │      ├─ STTService
+│   │   │                        │      ├─ TTSService
+│   │   │                        │      ├─ UserMissionService
+│   │   │                        │      └─ UserService
+│   │   │                        ├─ JacksonConfig
+│   │   │                        └─ ProjectFinalApplication
+│   │   └─ resource
+│   │          └─ templates
+│   │                  └─ test
+│   └─ java \ com \ example \ projectFinal 
+│                                 └─ ProjectFinalApplicationTests
 ├─ build.gradle
 ├─ gradlew
 ├─ .gitignore
