@@ -44,7 +44,7 @@
     </tbody>
 </table><br>
 
-<h2>프로젝트 소개</h2>
+<h2> 💁 프로젝트 소개</h2>
 <table>
   <tr>
     <th>프로젝트 명</th>
@@ -68,7 +68,7 @@
   </tr>
 </table><br>
 
-<h2>웹 서비스 소개</h2>
+<h2> 👷 웹 서비스 소개</h2>
 <p>
  <strong>DoRun-DoRun</strong>은 만화 , 영화 다양한 캐릭터를 활용한 영어 교육 사이트로, AI로 학습된 캐릭터와 대화를 통해 영어를 재미있게 배울 수 있습니다.
 
@@ -81,7 +81,7 @@
 추가적으로, DoRun-DoRun은 퀴즈 기능을 제공합니다. 사용자는 랜덤으로 배치된 문장을 해석에 맞춰 영어 단어를 클릭하여 순서대로 맞추는 퀴즈를 풀 수 있습니다. 
 </p><br>
 
-<h2>기술 스택</h2>
+<h2>📊 기술 스택</h2>
 
 <h3>#Front-end</h3>
 <div>
@@ -132,7 +132,7 @@
     <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
 </div><br>
 
-<h2>주요 기능</h2>
+<h2>💡 주요 기능</h2>
 <table>
     <tr>
         <th>기능</th>
@@ -188,7 +188,7 @@
     </tr>
 </table><br>
 
-<h2>프로젝트 구성도</h2>
+<h2>📂 프로젝트 구성도</h2>
 <table>
     <tr>
         <th>아키텍처(Architecture)</th>
@@ -322,7 +322,7 @@ server
 └─ package.json
 </pre><br>
 
-<h2>개발 팀 소개</h2>
+<h2>👪 개발 팀 소개</h2>
 <!-- <table>
     <tr>
         <td><img src="" alt="한우리"></td>
@@ -408,9 +408,9 @@ server
 <h2>프로젝트 소개 및 영상</h2>
 
 
-<h2>실행 방법</h2>
+<h2>💻 실행 방법</h2>
 
-### Client
+### Client 실행
 **1. 원격 저장소 복제**
 ```bash
 $ git clone https://github.com/ghtjd1358/DoRun-DoRun.git
@@ -428,7 +428,22 @@ $ npm install
 $ npm run dev
 ```
 ### Main Server 실행
-
+**1. 원격 저장소 복제**
+```bash
+$ git clone https://github.com/ghtjd1358/DoRun-DoRun.git
+```
+**2. 프로젝트 폴더로 이동**
+```bash
+$ cd backend
+```
+**3. 프로젝트 빌드**
+```bash
+$ gradlew clean build -x test
+```
+**5. 개발 서버 실행**
+```bash
+$ nohup java -jar projectFinal-0.0.1-SNAPSHOT.jar &
+```
 
 
 
