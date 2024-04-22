@@ -393,7 +393,7 @@ server
 
 <h3>Client 실행</h3>
 <h4>1. 원격 저장소 복제</h4>
-<pre>$ git clone https://github.com/KwonKuwhi/starwrite.git</pre>
+<pre>$ git clone https://github.com/ghtjd1358/DoRun-DoRun.git</pre>
 <h4>2. 프로젝트 폴더로 이동</h4>
 <pre>$ cd frontend</pre>
 <h4>3. 필요한 node_modules 설치</h4>
