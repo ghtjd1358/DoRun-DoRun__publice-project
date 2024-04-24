@@ -216,7 +216,7 @@ public class UserMissionService {
                         + "  \"topP\": 0.95,\n"
                         + "  \"topK\": 1\n"
                         + "}";
-        String project = "teampj-final"; // Google Cloud Console 에서 본인 프로젝트 이름 확인
+        String project = "angelic-ivy-421307"; // Google Cloud Console 에서 본인 프로젝트 이름 확인
         String location = "asia-northeast3";
         String publisher = "google";
         String model = "text-bison@002"; // 사용할 AI 모델

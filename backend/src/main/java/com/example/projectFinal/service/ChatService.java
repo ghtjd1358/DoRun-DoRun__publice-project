@@ -42,8 +42,8 @@ public class ChatService {
 			//GoogleCredentials credentials = GoogleCredentials.getApplicationDefault();
 			oAuthToken = credentials.refreshAccessToken().getTokenValue();
 			lastTokenRefreshTime = System.currentTimeMillis();
-			String baseUrl_chat = "https://asia-northeast3-aiplatform.googleapis.com/v1/projects/teampj-final/locations/asia-northeast3/publishers/google/models/chat-bison:predict";
-			String baseUrl_text = "https://asia-northeast3-aiplatform.googleapis.com/v1/projects/teampj-final/locations/asia-northeast3/publishers/google/models/text-bison-32k:predict";
+			String baseUrl_chat = "https://asia-northeast3-aiplatform.googleapis.com/v1/projects/angelic-ivy-421307/locations/asia-northeast3/publishers/google/models/chat-bison:predict";
+			String baseUrl_text = "https://asia-northeast3-aiplatform.googleapis.com/v1/projects/angelic-ivy-421307/locations/asia-northeast3/publishers/google/models/text-bison-32k:predict";
 			chatAuthClient = WebClient.create(baseUrl_chat);
 			textAuthClient = WebClient.create(baseUrl_text);
 		}
