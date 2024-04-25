@@ -67,7 +67,7 @@
   </tr>
   <tr>
     <td>배포 주소</td>
-    <td></td>
+    <td><a href="https://43.201.109.188.sslip.io/">https://43.201.109.188.sslip.io/</td>
   </tr>
 </table><br>
 
