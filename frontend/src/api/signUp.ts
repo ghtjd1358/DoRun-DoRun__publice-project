@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL: string = 'https://43.203.227.36.sslip.io/server';
+const API_URL: string = 'https://43.201.109.188.sslip.io/server';
 interface UserData {
   // username: string;
   userId: string;
