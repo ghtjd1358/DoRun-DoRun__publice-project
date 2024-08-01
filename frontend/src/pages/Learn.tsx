@@ -4,6 +4,8 @@ import Preview from '../components/Preview';
 import Wordquiz from '../components/Wordquiz';
 import TabButton from '../components/TabButton';
 import TabContent from '../components/TabContent';
+import Quiz from './Quiz';
+
 
 export default function Learn() {
     const navigate = useNavigate();
@@ -20,6 +22,12 @@ export default function Learn() {
             label: '예문100',
             content: <Preview/>,
             description: '난이도별로 준비된 100개의 예문을 익히며 영어 실력을 키워보세요!'
+        },
+        {
+            id : 2,
+            label: '심화퀴즈',
+            content: <Quiz/>,
+            description: '마지막 단계이며 해석 없이 문제를 해결해보세요!'
         }
     ];
 

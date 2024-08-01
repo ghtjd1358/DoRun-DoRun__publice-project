@@ -4,6 +4,8 @@ import { configureStore } from '@reduxjs/toolkit';
 import signUpReducer from './features/signUpSlice';
 import loginReducer from './features/loginSlice';
 import userCheckReducer from './features/userIdCheck';
+import quizReducer from './features/quiz';
+
 
 // const persistConfig = {
 //   key: 'root',
@@ -18,6 +20,7 @@ const store = configureStore({
     signup: signUpReducer,
     login: loginReducer,
     usercheck: userCheckReducer,
+    quiz : quizReducer,
   },
 });
 
